@@ -1185,12 +1185,6 @@
             }, 60 * 60 * 1000);
             basicBot.loggedInID = API.getUser().id;
             basicBot.status = true;
-            API.sendChat('/cap 1');
-            API.setVolume(0);
-            var emojibutton = $(".icon-emoji-on");
-            if (emojibutton.length > 0) {
-                emojibutton[0].click();
-            }
             loadChat(API.sendChat(subChat(basicBot.chat.online, {botname: basicBot.settings.botName, version: basicBot.version})));
         },
         commands: {

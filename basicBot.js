@@ -799,7 +799,7 @@
             var dj = API.getDJ();
 
             if (basicBot.settings.voteSkip) {
-                if ((mehs - woots) >= (basicBot.settings.voteSkipLimit)) {
+                if (mehs == basicBot.settings.voteSkipLimit) {
                     API.sendChat(subChat(basicBot.chat.voteskipexceededlimit, {name: dj.username, limit: basicBot.settings.voteSkipLimit}));
                     API.moderateForceSkip();
                 }

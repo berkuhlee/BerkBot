@@ -182,9 +182,9 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
-        cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        scriptLink: "https://rawgit.com/berkuhlee/basicBot/master/basicBot.js",
+        cmdLink: "https://github.com/berkuhlee/basicBot/blob/master/commands.md",
+        chatLink: "https://rawgit.com/berkuhlee/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -192,7 +192,7 @@
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/berkuhlee/basicBot/master/lang/en.json",
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
@@ -1917,7 +1917,7 @@
 
             killCommand: {
                 command: 'kill',
-                rank: 'bouncer',
+                rank: 'bouncer+',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2519,7 +2519,7 @@
 
             statusCommand: {
                 command: 'status',
-                rank: 'bouncer',
+                rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);

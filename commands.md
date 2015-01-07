@@ -19,6 +19,7 @@ Manager
 |!usercmdcd | X | set the cooldown on commands by grey users |
 |!usercommands | | toggle user commands |
 |!voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit. |
+|!kill | | shut down the bot |
 
 Bouncer+
 --------
@@ -57,7 +58,6 @@ Bouncer
 |!filter | | toggles the chat filter |
 |!jointime | @user | shows how long the user has been in the room |
 |!kick | (X) | kicks user for X minutes, default is 0.25 minutes (15 seconds) |
-|!kill | ||shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
 |!lockskippos | X | set the position to which lockskip moves the dj |

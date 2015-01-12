@@ -1415,7 +1415,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat(subChat(basicBot.chat.plugalphaLink, {botname: basicBot.settings.botName, link: basicBot.plugalphaLink}));
+                        API.sendChat("https://plugcubed.net/Alpha");
                     }
                 }
             },

@@ -184,6 +184,7 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/berkuhlee/basicBot/master/basicBot.js",
         cmdLink: "https://github.com/berkuhlee/basicBot/blob/master/commands.md",
+        plugalphaLink: "https://plugcubed.net/Alpha",
         chatLink: "https://rawgit.com/berkuhlee/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
@@ -1406,15 +1407,15 @@
                 }
             },
 
-            autowootCommand: {
-                command: 'autowoot',
+            plugalphaCommand: {
+                command: 'plugalpha',
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat(basicBot.chat.autowoot);
+                        API.sendChat(subChat(basicBot.chat.plugalpha, {botname: basicBot.settings.botName, link: basicBot.plugalphaLink}));
                     }
                 }
             },

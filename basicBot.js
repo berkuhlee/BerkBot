@@ -2561,7 +2561,7 @@
                         msg += '. ';
 
                         msg += basicBot.chat.voteskip + ': ';
-                        if (Qbot.settings.voteskip) msg += 'ON';
+                        if (basicBot.settings.voteskip) msg += 'ON';
                         else msg += 'OFF';
                         msg += '. ';
 
